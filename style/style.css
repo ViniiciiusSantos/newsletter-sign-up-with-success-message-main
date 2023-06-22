@@ -15,7 +15,6 @@
 .container-principal {
     width: 375px;
     height: 100%;
-
     margin-left: auto;
     margin-right: auto;
 }
@@ -37,6 +36,7 @@ h2 {
 }
 
 .container-p {
+    display: flex;
     margin-left: 17px;
     padding-top: 22px;
     font-size: 17px; 
@@ -49,8 +49,12 @@ h2 {
     padding: 10px;
 }
 
-.img-p {
-    margin-right: 9px;
+.container-img {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
+    margin-top: 10px;
+    margin-left: 8px;
 }
 
 .form {
@@ -59,7 +63,7 @@ h2 {
     gap: 12px;
     padding: 10px;
     margin-left: 16px;
-    margin-top: 15px;
+    margin-top: 8px;
 }
 
 small {
@@ -85,11 +89,11 @@ small {
 
 input::placeholder {
     font-family: 'Roboto-Regular';
-    font-size: 15px;
-    padding-left: 15px;
+    font-size: 16px;
+    padding-left: 40px;
 }
 
-.input-button {
+.input-button, .button-confirm {
     width: 325px;
     height: 58px;
     background-color: hsl(234, 29%, 20%);
@@ -99,4 +103,25 @@ input::placeholder {
     margin-top: 10px;
     font-family: 'Roboto-Bold';
     font-size: 14px;
+}
+
+.img-confirm {
+    width: 50px;
+}
+
+.p-confirm {
+    color: hsl(235, 18%, 26%);
+    font-family: 'Roboto-Regular';
+    font-size: 16px;
+}
+
+.button-confirm {
+    margin-top: 140px;
+}
+
+.validado {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    display: none;
 }
