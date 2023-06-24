@@ -19,6 +19,14 @@
     margin-right: auto;
 }
 
+.img-mobile {
+    display: block;
+}
+
+.img-g {
+    display: none;
+}
+
 h1{
     margin-left: 25px;
     margin-top: 20px;

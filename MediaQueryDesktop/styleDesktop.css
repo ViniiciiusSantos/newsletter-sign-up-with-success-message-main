@@ -1,13 +1,57 @@
-@media (min-width: 1200px) {
-    .container-principal {
+@media (min-width: 1000px) {
+    body {
         width: 1440px;
         height: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: blue;
+        background-color: hsl(234, 29%, 20%);
+    }
+    .container-principal {
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: white;
+        width: 900px;
+        height: 600px;
+        margin-top: 60px;
+        border-radius: 25px;
+        margin-left: 300px;
     }
 
-    .img-top {
-       
+    .container-desktop {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        word-wrap: break-word;
+        margin-top: 28px;
+        padding-left: 40px;
+    }
+
+    .img-mobile {
+        display: none;
+    }
+    
+    .img-g {
+        display: block;
+        width: 600px;
+        height: 560px;
+        margin-top: 22px;
+        margin-left: 10px;
+    }
+
+    .input-button:hover, .button-confirm:hover {
+        background-image: linear-gradient(to left, #ff9966, hsl(4, 100%, 67%));
+        cursor: pointer;
+    }
+
+    .validado {
+        display: block;
+        width: 450px;
+        height: 480px;
+        border: solid 1px black;
+        position: absolute;
+        left: 520px;
+        bottom: 120px;
+        background-color: white;
+        border-radius: 25px;
+        display: flex;
+        justify-content: space-evenly;
     }
 }
