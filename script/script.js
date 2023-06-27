@@ -11,3 +11,10 @@ form.addEventListener('submit' , (e) => {
   containerP.style.display = "none"
   validado.style.display = "block"
 })
+
+function voltar() {
+  containerP.style.display = "";
+  validado.style.display = "none";
+}
+dimiss.addEventListener('click', voltar);
+
