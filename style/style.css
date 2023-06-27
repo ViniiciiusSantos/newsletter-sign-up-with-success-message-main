@@ -15,19 +15,23 @@
 .container-principal {
     width: 375px;
     height: 100%;
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 .img-mobile {
     display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .img-g {
     display: none;
 }
 
-h1{
+.first-h1 {
     margin-left: 25px;
     margin-top: 20px;
     font-size: 42px;
@@ -86,6 +90,7 @@ small {
     font-family: 'Roboto-Bold';
     color: hsl(234, 29%, 20%);
 }
+
 .input-email {
     width: 325px;
     height: 58px;
@@ -115,6 +120,11 @@ input::placeholder {
 
 .img-confirm {
     width: 50px;
+}
+
+.input-button:hover, .button-confirm:hover {
+    background-image: linear-gradient(to left, #ff9966, hsl(4, 100%, 67%));
+    cursor: pointer;
 }
 
 .p-confirm {

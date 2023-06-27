@@ -1,19 +1,13 @@
-let emailOut = document.querySelector('.input-email');
-let form = document.querySelector('.form');
-let small = document.querySelector('.smalll');
-let validado = document.querySelector('.validado')
+const emailOut = document.querySelector('.input-email');
+const form = document.querySelector('.form');
+const small = document.querySelector('.smalll');
+const validado = document.querySelector('.validado');
+const containerP = document.querySelector('.container-principal');
+const dimiss = document.querySelector('.button-confirm');
 
 
-form.addEventListener('submit' , (e)=>{
-  if(validacao(emailOut.value) == true) {
-      validado.style.display = 'block';
-  } else {
-      small.style.display = 'block'
-  }
-  e.preventDefault()
+form.addEventListener('submit' , (e) => {
+  e.preventDefault();
+  containerP.style.display = "none"
+  validado.style.display = "block"
 })
-
-function validacao(email) {
-  var emailPadrao = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-  return emailPadrao.test(email);
-}

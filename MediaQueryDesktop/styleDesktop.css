@@ -1,4 +1,4 @@
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
     body {
         width: 1440px;
         height: 100%;
@@ -11,8 +11,9 @@
         width: 900px;
         height: 600px;
         margin-top: 60px;
+        margin-left: 300px; 
         border-radius: 25px;
-        margin-left: 300px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
     .container-desktop {
@@ -36,22 +37,38 @@
         margin-left: 10px;
     }
 
-    .input-button:hover, .button-confirm:hover {
-        background-image: linear-gradient(to left, #ff9966, hsl(4, 100%, 67%));
-        cursor: pointer;
-    }
-
     .validado {
-        display: block;
+        display: none;
         width: 450px;
         height: 480px;
-        border: solid 1px black;
         position: absolute;
         left: 520px;
         bottom: 120px;
         background-color: white;
         border-radius: 25px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    h1 {
+        font-size: 42px;
+        font-family:"Roboto-bold";
+        color: hsl(234, 29%, 20%);
+    }
+
+    .c-validado {
+        word-wrap: normal;
+        width: 330px;
+        height: 390px;
+        margin-top: 40px;
+        margin-left: 60px;
         display: flex;
+        flex-direction: column;
         justify-content: space-evenly;
     }
+
+    .button-confirm {
+        margin-top: 20px;
+        padding: 0px;
+    }
+    
 }
