@@ -15,6 +15,8 @@ form.addEventListener('submit' , (e) => {
 function voltar() {
   containerP.style.display = "";
   validado.style.display = "none";
+  emailOut.value = "";
+  emailOut.focus();
 }
 dimiss.addEventListener('click', voltar);
 
