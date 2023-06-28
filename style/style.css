@@ -6,11 +6,11 @@
 
 @font-face {
     font-family: 'Roboto-bold';
-    src: url("assets/fonts/Roboto-Bold.ttf");
+    src: url("/assets/fonts/Roboto-Bold.ttf");
 } 
 @font-face {
     font-family: 'Roboto-regular';
-    src: url("assets/fonts/Roboto-Regular.ttf");
+    src: url("/assets/fonts/Roboto-Regular.ttf");
 }
 .container-principal {
     width: 375px;
@@ -137,8 +137,20 @@ input::placeholder {
 }
 
 .validado {
+    display: none;
+    background-color: white;
+    border-radius: 25px;
+    display: none;
+    padding: 20px;
+}
+
+.c-validado {
+    word-wrap: normal;
+    width: 330px;
+    height: 390px;
+    margin-top: 40px;
+    margin-left: 60px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    display: none;
+    justify-content: space-evenly;
 }
