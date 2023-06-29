@@ -6,6 +6,21 @@ const containerP = document.querySelector('.container-principal');
 const dimiss = document.querySelector('.button-confirm');
 
 
+emailOut.addEventListener('keyup', () => {
+  if(validacaoEmail(emailOut.value) !== true){
+    small.style.display = "block";
+    emailOut.classList.add('invalido');
+  } else {
+    small.style.display = "none";
+    emailOut.classList.remove('invalido');
+  }
+})
+
+function validacaoEmail(emailOut) {
+  var emailRegex = /^\S+@\S+\.\S+$/;
+  return emailRegex.test(emailOut);
+}
+
 form.addEventListener('submit' , (e) => {
   e.preventDefault();
   containerP.style.display = "none"
@@ -18,5 +33,6 @@ function voltar() {
   emailOut.value = "";
   emailOut.focus();
 }
+
 dimiss.addEventListener('click', voltar);
 
